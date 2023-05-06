@@ -1,0 +1,231 @@
+/* Importando nossas fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@400;500;600;700;800&display=swap');
+
+/* Zerando contagens dos navegadores */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: var(--secondary-font);
+}
+
+/* Criando nossas váriaveis de estilizaçao */
+:root
+{
+  --background-color : #FBFBFB;
+  --color-primary-text : #33303E;
+  --color-secondary-text : #4E4B59;
+  --color-tertiary-text : #F5F5F5;
+
+  --primary-color : #FF8800;
+  --primary-color-variant-one : #FF6E22;
+  --primary-color-variant-two : #FF950D;
+
+  --secondary-color : #0088AE;
+  --additional-color-yellow : #FFE74C;
+  --additional-color-blue : #66ACFF;
+  --additional-color-purple : #A944FF;
+
+  --primary-font : 'Mochiy Pop One', sans-serif;
+  --secondary-font : 'Raleway', sans-serif;
+}
+
+/* Estilizando o fundo de tela */
+html
+{
+  background-color: var(--background-color);
+}
+
+.container
+{ 
+  margin: 0 auto;
+}
+
+/* Estilizando nosso cabeçalho */
+.cabecalho
+{
+  padding: 2rem 0px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav.menu
+{
+  width: 85%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+nav.menu a img
+{
+  width: 14rem;
+}
+
+nav.menu ul
+{
+  list-style-type: none;
+
+  display: flex;
+  align-items: center;
+}
+
+nav.menu ul li a
+{
+  padding: 1rem;
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  color : var(--color-secondary-text);
+}
+
+nav.menu ul li.registrar a
+{
+  color: var(--primary-color-variant-one);
+}
+
+nav.menu ul li.registrar a:hover
+{
+  font-size: 28px;
+  transition: 0.5s ease;
+}
+
+/* Estilizando nossa main */
+
+main.corpo
+{
+  width: 85%;
+  padding-top: 6rem;
+}
+
+/* Seção principal das imagens */
+.painel-principal
+{
+  align-items: center;
+}
+
+.painel-principal div.anuncio-petz h2.titulo
+{
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 5.5rem;
+  color: var(--color-primary-text);
+}
+
+.painel-principal div.anuncio-petz p.descricao
+{
+  width: 90%;
+  font-weight: 500;
+  margin-top: 30px;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: var(--color-secondary-text);
+}
+
+.painel-principal div.anuncio-petz button.botao_principal
+{
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-top: 25px;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 1.8rem 3.5rem;
+  color: var(--color-tertiary-text);
+  background-color: var(--primary-color-variant-two);
+}
+
+.painel-principal div.anuncio-petz button.botao_principal:hover
+{
+  background-color: var(--primary-color-variant-one);
+  transition: 1s;
+}
+
+.painel-principal div.parte-fotos-01
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.painel-principal div.parte-fotos-01 div,
+.painel-principal div.parte-fotos-02 div
+{
+  position: relative;
+}
+
+.painel-principal div.parte-fotos-01 div img
+{
+  width: 15rem;
+  margin: 05px;
+}
+
+.painel-principal div.parte-fotos-02 div img
+{
+  width: 35rem;
+  margin-left: 05px;
+}
+
+.painel-principal div.parte-fotos-01 div img,
+.painel-principal div.parte-fotos-02 div img
+{
+  border-radius: 20px;
+}
+
+.painel-principal div.parte-fotos-01 div.fundo,
+.painel-principal div.parte-fotos-02 div.fundo
+{
+  z-index: -1;
+  padding: 1rem;
+  opacity: 0.8;
+  position: absolute;
+  border-radius: 15px;
+}
+
+.painel-principal div.parte-fotos-01 div.fundo-roxo
+{
+  height: 75%;
+  width: 13rem;
+  left: 3.5rem;
+  bottom: -5px;
+  background-color: var(--additional-color-purple);
+}
+
+.painel-principal div.parte-fotos-01 div.fundo-azul
+{
+  width: 12rem;
+  height: 80%;
+  left: -0.5rem;
+  bottom: -0.5rem;
+  background-color: var(--secondary-color);
+}
+
+.painel-principal div.parte-fotos-02 div.fundo-laranja
+{
+  top: -2rem;
+  height: 70%;
+  width: 26rem;
+  left: 11.5rem;
+  background-color: var(--primary-color);
+}
+
+/* .painel-principal div.parte-fotos-01 div
+{
+  background-color: red;
+  border-radius: 15px;
+  margin: 1rem;
+}
+
+.painel-principal div.parte-fotos-01 div img,
+.painel-principal div.parte-fotos-02 div img
+{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.painel-principal div.parte-fotos-02
+{
+  background-color: green;
+  padding: 1rem;
+} */
