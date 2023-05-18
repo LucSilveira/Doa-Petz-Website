@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Definindo a apresentação do nosso site -->
+   <title>Doa-Petz</title>
+   <link rel="icon" type="image/png" href="../../assets/img/fundo-navegador.png">
+   <meta name="description" content="Ajudando você a encontrar seu pet ideal!">
+
+   <!-- Chamando nossos estilos -->
+  <link rel="stylesheet" href="../../assets/styles/guide.css">
+  <link rel="stylesheet" href="../../assets/styles/grid.css">
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- our project just needs Font Awesome Solid + Brands -->
+  <link href="../../assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="../../assets/fontawesome/css/free.min.css" rel="stylesheet">
+  <link href="../../assets/fontawesome/css/brands.css" rel="stylesheet">
+  <link href="../../assets/fontawesome/css/solid.css" rel="stylesheet">
+  <link href="../../assets/fontawesome/css/all.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="cabecalho">
+    <section class="row">
+      <nav class="menu col-xs-12 col-sm-12 col-12">
+        <!-- Logo -->
+        <a href="">
+          <img class="logomarca" src="../../assets/img/doapetz.png" alt="Logomarca da companhia Doa-Petz" />
+        </a>
+  
+        <!-- Links acesso -->
+        <ul class="links-navegacao">
+          <li>
+            <a href="">Entrar</a>
+          </li>
+          <li class="registrar">
+            <a href="">Cadastrar-se</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <main class="corpo container">
+    <!-- Seção principal -->
+    <section class="row painel-titulo">
+      <div class="secao-pagina">
+        <h2 class="titulo">Encontrar pets</h2>
+        <p class="descricao">Encontre um novo amigo ideal para ser seu melhor amigo!</p>
+      </div>
+    </section>
+
+    <!-- Seção dos filtros e pesquisa -->
+    <section class="filtros-petz">
+      <div class="filtro-botoes" id="filtro-botoes">
+        <!-- <div class="tipo-pet active" onclick="AtivarEDesativarFiltro(event)"> -->
+        <button type="button" class="tipo-pet active" onclick="AtivarEDesativarFiltro(event)">
+          <i class="fa-solid fa-dog"></i>
+          <p>Cachorros</p>
+        </button>
+
+        <button type="button" class="tipo-pet active" onclick="AtivarEDesativarFiltro(event)">
+          <i class="fa-solid fa-cat"></i>
+          <p>Gatos</p>
+        </button>
+
+        <button type="button" class="tipo-pet" onclick="AtivarEDesativarFiltro(event)">
+          <i class="fa-solid fa-dove"></i>
+          <p>Pássaros</p>
+        </button>
+
+        <button type="button" class="tipo-pet" onclick="AtivarEDesativarFiltro(event)">
+          <i class="fas fa-snake"></i>
+          <p>Répteis</p>
+        </button>
+
+        <button type="button" class="tipo-pet" onclick="AtivarEDesativarFiltro(event)">
+          <i class="fas fa-turtle"></i>
+          <p>Tartarugas</p>
+        </button>
+
+        <button type="button" class="tipo-pet" onclick="AtivarEDesativarFiltro(event)">
+          <i class="fas fa-rabbit"></i>
+          <p>Roedores</p>
+        </button>
+      </div>
+
+      <div class="campo-pesquisa">
+        <span>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Descreva o pet...">
+        </span>
+      </div>
+    </section>
+
+    <section class="pets-cards">
+      <section class="dogs-secao secao-pet">
+
+        <!-- titulo da seção dos petz -->
+        <div class="row titulo-pet">
+          <h3 class="titulo-secao">Cachorros <i class="fa-solid fa-chevron-right"></i></h3>
+          <a href="">Ver mais</a>
+        </div>
+
+        <!-- Seção das listagens dos cards - dogs -->
+        <div class="linha-card-petz row">
+
+          <!-- Card -->
+          <div class="card-pet">
+            <!-- <img src="../../assets/img/petz/dog-labrador.jpg" alt="Imagem de um cachorro da raça labrador tomando sol"> -->
+            <div class="img-pet" style="background-image: url(../../assets/img/petz/dog-labrador.jpg);"></div>
+            
+            <div class="informacoes-pets">
+              <div class="titulo-pet row">
+                <h3 class="nome-pet">Spot</h3>
+
+                <i class="fa-solid fa-mars icon-pet"></i>
+                <!-- <i class="fa-solid fa-venus icon-pet"></i> -->
+              </div>
+
+              <div class="info-pet-box">
+                <p class="info-pet localizacao-petz"> <i class="fa-solid fa-location-dot"></i> Brooklin, SP</p>
+                <p class="info-pet dados-petz">Labrador, 08 anos</p>
+              </div>
+            </div>
+
+            <button class="curtir-pet"><i class="fa-solid fa-paw"></i></button>
+          </div>
+
+          <!-- Card -->
+          <div class="card-pet">
+            <!-- <img src="../../assets/img/petz/dog-pug.jpg" alt="Imagem de um cachorro da raça labrador tomando sol"> -->
+            <div class="img-pet" style="background-image: url(../../assets/img/petz/dog-pug.jpg);"></div>
+            
+            <div class="informacoes-pets">
+              <div class="titulo-pet row">
+                <h3 class="nome-pet">Spancer</h3>
+
+                <i class="fa-solid fa-mars icon-pet"></i>
+                <!-- <i class="fa-solid fa-venus icon-pet"></i> -->
+              </div>
+
+              <div class="info-pet-box">
+                <p class="info-pet localizacao-petz"> <i class="fa-solid fa-location-dot"></i> Lapa, SP</p>
+                <p class="info-pet dados-petz">Pug, 03 meses</p>
+              </div>
+            </div>
+
+            <button class="curtir-pet"><i class="fa-solid fa-paw"></i></button>
+          </div>
+
+          <!-- Card -->
+          <div class="card-pet">
+            <!-- <img src="./../assets/img/petz/dog-beagle.jpg" alt="Imagem de um cachorro da raça labrador tomando sol"> -->
+            <div class="img-pet" style="background-image: url(../../assets/img/petz/dog-beagle.jpg);"></div>
+            
+            <div class="informacoes-pets">
+              <div class="titulo-pet row">
+                <h3 class="nome-pet">Georgia</h3>
+
+                <!-- <i class="fa-solid fa-mars icon-pet"></i> -->
+                <i class="fa-solid fa-venus icon-pet"></i>
+              </div>
+
+              <div class="info-pet-box">
+                <p class="info-pet localizacao-petz"> <i class="fa-solid fa-location-dot"></i> Brooklin, SP</p>
+                <p class="info-pet dados-petz">Beagle, 04 anos</p>
+              </div>
+            </div>
+
+            <button class="curtir-pet"><i class="fa-solid fa-paw"></i></button>
+          </div>
+
+          <!-- Card -->
+          <div class="card-pet">
+            <!-- <img src="../../assets/img/petz/dog-pincher.jpg" alt="Imagem de um cachorro da raça labrador tomando sol"> -->
+            <div class="img-pet" style="background-image: url(../../assets/img/petz/dog-pincher.jpg);"></div>
+            
+            <div class="informacoes-pets">
+              <div class="titulo-pet row">
+                <h3 class="nome-pet">Marley</h3>
+
+                <!-- <i class="fa-solid fa-mars icon-pet"></i> -->
+                <i class="fa-solid fa-venus icon-pet"></i>
+              </div>
+
+              <div class="info-pet-box">
+                <p class="info-pet localizacao-petz"> <i class="fa-solid fa-location-dot"></i> Brooklin, SP</p>
+                <p class="info-pet dados-petz">Pincher, 01 ano</p>
+              </div>
+            </div>
+
+            <button class="curtir-pet"><i class="fa-solid fa-paw"></i></button>
+          </div>
+
+          <!-- Card -->
+          <div class="card-pet">
+            <!-- <img src="../../assets/img/petz/dog-puddle.jpg" alt="Imagem de um cachorro da raça labrador tomando sol"> -->
+            <div class="img-pet" style="background-image: url(../../assets/img/petz/dog-puddle.jpg);"></div>
+            
+            <div class="informacoes-pets">
+              <div class="titulo-pet row">
+                <h3 class="nome-pet">Freddy</h3>
+
+                <i class="fa-solid fa-mars icon-pet"></i>
+                <!-- <i class="fa-solid fa-venus icon-pet"></i> -->
+              </div>
+
+              <div class="info-pet-box">
+                <p class="info-pet localizacao-petz"> <i class="fa-solid fa-location-dot"></i> Lapa, SP</p>
+                <p class="info-pet dados-petz">Puddle, 03 anos</p>
+              </div>
+            </div>
+
+            <button class="curtir-pet"><i class="fa-solid fa-paw"></i></button>
+          </div>
+
+          <!-- Card -->
+          <div class="card-pet">
+            <!-- <img src="../../assets/img/petz/dog-bulldog.jpg" alt="Imagem de um cachorro da raça labrador tomando sol"> -->
+            <div class="img-pet" style="background-image: url(../../assets/img/petz/dog-bulldog.jpg);"></div>
+            
+            <div class="informacoes-pets">
+              <div class="titulo-pet row">
+                <h3 class="nome-pet">Lizzy</h3>
+
+                <!-- <i class="fa-solid fa-mars icon-pet"></i> -->
+                <i class="fa-solid fa-venus icon-pet"></i>
+              </div>
+
+              <div class="info-pet-box">
+                <p class="info-pet localizacao-petz"> <i class="fa-solid fa-location-dot"></i> Lapa, SP</p>
+                <p class="info-pet dados-petz">Bulldog, 02 meses</p>
+              </div>
+            </div>
+
+            <button class="curtir-pet"><i class="fa-solid fa-paw"></i></button>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="cats-secao secao-pet">
+
+        <!-- titulo da seção dos petz -->
+        <div class="row titulo-pet">
+          <h3 class="titulo-secao">Gatos <i class="fa-solid fa-chevron-right"></i></h3>
+          <a href="">Ver mais</a>
+        </div>
+
+        <!-- Seção das listagens dos cards - dogs -->
+        <div class="linha-card-petz row">
+
+          <!-- Card -->
+          <div class="card-pet">
+            <!-- <img src="../../assets/img/petz/dog-labrador.jpg" alt="Imagem de um cachorro da raça labrador tomando sol"> -->
+            <div class="img-pet" style="background-image: url(../../assets/img/petz/cat-abissino.jpg);"></div>
+            
+            <div class="informacoes-pets">
+              <div class="titulo-pet row">
+                <h3 class="nome-pet">Marge</h3>
+
+                <!-- <i class="fa-solid fa-mars icon-pet"></i> -->
+                <i class="fa-solid fa-venus icon-pet"></i>
+              </div>
+
+              <div class="info-pet-box">
+                <p class="info-pet localizacao-petz"> <i class="fa-solid fa-location-dot"></i> Lapa, SP</p>
+                <p class="info-pet dados-petz">Abissíno, 03 anos</p>
+              </div>
+            </div>
+
+            <button class="curtir-pet"><i class="fa-solid fa-paw"></i></button>
+          </div>
+
+          <!-- Card -->
+          <div class="card-pet">
+            <!-- <img src="../../assets/img/petz/dog-pug.jpg" alt="Imagem de um cachorro da raça labrador tomando sol"> -->
+            <div class="img-pet" style="background-image: url(../../assets/img/petz/cat-angora.jpg);"></div>
+            
+            <div class="informacoes-pets">
+              <div class="titulo-pet row">
+                <h3 class="nome-pet">Margot</h3>
+
+                <!-- <i class="fa-solid fa-mars icon-pet"></i> -->
+                <i class="fa-solid fa-venus icon-pet"></i>
+              </div>
+
+              <div class="info-pet-box">
+                <p class="info-pet localizacao-petz"> <i class="fa-solid fa-location-dot"></i> Lapa, SP</p>
+                <p class="info-pet dados-petz">Angorá, 03 meses</p>
+              </div>
+            </div>
+
+            <button class="curtir-pet"><i class="fa-solid fa-paw"></i></button>
+          </div>
+
+          <!-- Card -->
+          <div class="card-pet">
+            <!-- <img src="./../assets/img/petz/dog-beagle.jpg" alt="Imagem de um cachorro da raça labrador tomando sol"> -->
+            <div class="img-pet" style="background-image: url(../../assets/img/petz/cat-ragdoll.jpg);"></div>
+            
+            <div class="informacoes-pets">
+              <div class="titulo-pet row">
+                <h3 class="nome-pet">Freddy</h3>
+
+                <i class="fa-solid fa-mars icon-pet"></i>
+                <!-- <i class="fa-solid fa-venus icon-pet"></i> -->
+              </div>
+
+              <div class="info-pet-box">
+                <p class="info-pet localizacao-petz"> <i class="fa-solid fa-location-dot"></i> Brooklin, SP</p>
+                <p class="info-pet dados-petz">Ragdoll, 04 anos</p>
+              </div>
+            </div>
+
+            <button class="curtir-pet"><i class="fa-solid fa-paw"></i></button>
+          </div>
+
+          <!-- Card -->
+          <div class="card-pet">
+            <!-- <img src="../../assets/img/petz/dog-pincher.jpg" alt="Imagem de um cachorro da raça labrador tomando sol"> -->
+            <div class="img-pet" style="background-image: url(../../assets/img/petz/cat-siames.jpg);"></div>
+            
+            <div class="informacoes-pets">
+              <div class="titulo-pet row">
+                <h3 class="nome-pet">Bob</h3>
+
+                <i class="fa-solid fa-mars icon-pet"></i>
+                <!-- <i class="fa-solid fa-venus icon-pet"></i> -->
+              </div>
+
+              <div class="info-pet-box">
+                <p class="info-pet localizacao-petz"> <i class="fa-solid fa-location-dot"></i> Brooklin, SP</p>
+                <p class="info-pet dados-petz">Siâmes, 04 anos</p>
+              </div>
+            </div>
+
+            <button class="curtir-pet"><i class="fa-solid fa-paw"></i></button>
+          </div>
+
+          <!-- Card -->
+          <div class="card-pet">
+            <!-- <img src="../../assets/img/petz/dog-puddle.jpg" alt="Imagem de um cachorro da raça labrador tomando sol"> -->
+            <div class="img-pet" style="background-image: url(../../assets/img/petz/cat-karot.jpg);"></div>
+            
+            <div class="informacoes-pets">
+              <div class="titulo-pet row">
+                <h3 class="nome-pet">Mags</h3>
+
+                <!-- <i class="fa-solid fa-mars icon-pet"></i> -->
+                <i class="fa-solid fa-venus icon-pet"></i>
+              </div>
+
+              <div class="info-pet-box">
+                <p class="info-pet localizacao-petz"> <i class="fa-solid fa-location-dot"></i> Brooklin, SP</p>
+                <p class="info-pet dados-petz">Kator, 01 ano</p>
+              </div>
+            </div>
+
+            <button class="curtir-pet"><i class="fa-solid fa-paw"></i></button>
+          </div>
+
+          <!-- Card -->
+          <div class="card-pet">
+            <!-- <img src="../../assets/img/petz/dog-bulldog.jpg" alt="Imagem de um cachorro da raça labrador tomando sol"> -->
+            <div class="img-pet" style="background-image: url(../../assets/img/petz/cat-pixie.jpg);"></div>
+            
+            <div class="informacoes-pets">
+              <div class="titulo-pet row">
+                <h3 class="nome-pet">Bob</h3>
+
+                <i class="fa-solid fa-mars icon-pet"></i>
+                <!-- <i class="fa-solid fa-venus icon-pet"></i> -->
+              </div>
+
+              <div class="info-pet-box">
+                <p class="info-pet localizacao-petz"> <i class="fa-solid fa-location-dot"></i> Brooklin, SP</p>
+                <p class="info-pet dados-petz">Pixie-bob, 02 meses</p>
+              </div>
+            </div>
+
+            <button class="curtir-pet"><i class="fa-solid fa-paw"></i></button>
+          </div>
+
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <div class="conteudo-footer row container">
+      <img class="logomarca" src="../../assets/img/doapetz-branco.png" alt="Logomarca da companhia Doa-Petz">
+
+      <div class="redes-sociais">
+        <p>Confira nossas redes sociais</p>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+    <div class="copright">
+      <p> <strong>@copyright</strong> - Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <!-- Chamando nosso javascript -->
+  <script src="../../assets/script/script.js"></script>
+</body>
+</html>

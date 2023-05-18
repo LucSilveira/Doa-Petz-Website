@@ -69,15 +69,26 @@
     float: left;
 } */
 
-.row, .col{
+.row{
     display: -webkit-box; /*ios6, Safari 3.1*/
     display: -moz-box; /*Firefox 1.9*/
     display: -ms-flexbox; /*I.E 10*/
     display: -webkit-flex; /*Chrome*/
     display: flex; /*Opera, Firefox, Chrome, Edge*/
     flex-wrap: wrap;
-    direction: row;
+    flex-direction: row;
     width: 100%;
+}
+
+.col{
+    display: -webkit-box; /*ios6, Safari 3.1*/
+    display: -moz-box; /*Firefox 1.9*/
+    display: -ms-flexbox; /*I.E 10*/
+    display: -webkit-flex; /*Chrome*/
+    display: flex; /*Opera, Firefox, Chrome, Edge*/
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* width: 100%; */
 }
 
 /*Dispositivos muito pequenos (smartphones, menores que 600px)*/

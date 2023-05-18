@@ -1,0 +1,328 @@
+/* Importando nossas fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Zerando contagens dos navegadores */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+
+  font-family: var(--secondary-font);
+}
+
+/* Criando nossas váriaveis de estilizaçao */
+:root
+{
+  --background-color : #FBFBFB;
+  --color-primary-text : #33303E;
+  --color-secondary-text : #4E4B59;
+  --color-terciary-text : #F5F5F5;
+  --color-quartenary-text : #7A7786;
+
+  --primary-color : #FF8800;
+  --primary-color-variant-one : #FF6E22;
+  --primary-color-variant-two : #FF950D;
+
+  --secondary-color : #0088AE;
+  --additional-color-yellow : #FFE74C;
+  --additional-color-blue : #66ACFF;
+  --additional-color-purple : #A944FF;
+
+  --primary-font : 'Mochiy Pop One', sans-serif;
+  --secondary-font : 'Raleway', sans-serif;
+}
+
+/* Estilizações padrões para telas */
+html
+{
+  background-color: var(--background-color);
+}
+
+.container
+{ 
+  width: 85% !important;
+  margin: 0 auto;
+}
+
+h2.titulo
+{
+  width: 95%;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 4rem;
+  color: var(--color-primary-text);
+}
+
+h3.titulo
+{
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-family: var(--secondary-font);
+  color: var(--color-primary-text);
+}
+
+h3.nome-pet
+{
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: var(--primary-font);
+  color: var(--color-primary-text);
+}
+
+p.descricao
+{
+  font-weight: 500;
+  font-size: 1.45rem;
+  line-height: 2.2rem;
+  font-family: var(--secondary-font);
+  color: var(--color-secondary-text);
+}
+
+p.info-pet
+{
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  font-family: var(--secondary-font);
+  color: var(--color-quartenary-text);
+}
+
+img.logomarca
+{
+  width: 12rem;
+}
+
+/* Estilizando nosso cabeçalho */
+.cabecalho
+{
+  padding: 2rem 0px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav.menu
+{
+  width: 85%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+nav.menu ul
+{
+  margin-bottom: 0 !important;
+  list-style-type: none;
+
+  display: flex;
+  align-items: center;
+}
+
+nav.menu ul li a
+{
+  padding: 1rem;
+  font-size: 1.4em;
+  font-weight: 600;
+  text-decoration: none;
+  color : var(--color-secondary-text);
+}
+
+nav.menu ul li.registrar a
+{
+  color: var(--primary-color-variant-one);
+}
+
+nav.menu ul li.registrar a:hover
+{
+  font-size: 1.5em;
+  padding: 0 1rem;
+  transition: 0.5s ease;
+}
+
+/* Estilizando nosso rodape */
+footer.rodape
+{
+  background-color: var(--secondary-color);
+}
+
+footer.rodape .conteudo-footer
+{
+  padding-top: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer.rodape .conteudo-footer div
+{
+  display: flex;
+  
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--background-color);
+}
+
+footer.rodape .conteudo-footer div i,
+footer.rodape .conteudo-footer div p
+{
+  padding: 0 0.5rem;
+}
+
+footer.rodape div.copright
+{
+  padding: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--background-color);
+}
+
+@media only screen and (max-width: 1200px)
+{
+  img.logomarca
+  {
+    width: 11rem;
+  }
+
+  nav.menu ul li a
+  {
+    padding: 0.75rem;
+    font-size: 1.2em;
+  }
+
+  nav.menu ul li.registrar a:hover
+  {
+    font-size: 1.4em;
+  }
+  
+  h2.titulo
+  {
+    font-size: 2.3em;
+    line-height: 3.5rem;
+  }
+
+  p.descricao
+  {
+    font-size: 1.3rem;
+    line-height: 2.0rem;
+  }
+
+  h3.nome-pet
+  {
+    font-size: 1.2rem;
+  }
+
+  p.info-pet
+  {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 1024px)
+{
+  img.logomarca
+  {
+    width: 10rem;
+  }
+
+  nav.menu ul li a 
+  {
+    font-size: 1.1em;
+  }
+
+  nav.menu ul li a:hover
+  {
+    font-size: 1.2em;
+  }
+  
+  h2.titulo
+  {
+    font-size: 2.2em;
+    line-height: 3rem;
+  }
+
+  p.descricao
+  {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px)
+{
+  img.logomarca
+  {
+    width: 9rem;
+  }
+
+  nav.menu ul li.registrar a:hover
+  {
+    font-size: 1.25em;
+  }
+
+  h2.titulo
+  {
+    font-size: 2.5em;
+    line-height: 3.5rem;
+  }
+
+  p.descricao
+  {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+
+  footer.rodape .conteudo-footer
+  {
+    padding: 1rem 0;
+  }
+
+  footer.rodape .conteudo-footer div
+  {
+    font-size: 1rem;
+  }
+
+  footer.rodape div.copright
+  {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 700px)
+{
+  h2.titulo {
+    font-size: 2em;
+    line-height: 3rem;
+  }
+
+  section.tipos-perfil h2
+  {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 600px)
+{
+  h2.titulo
+  {
+    font-size: 2em;
+  }
+
+  footer.rodape .conteudo-footer
+  {
+    gap: 10px;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 480px)
+{
+  h2.titulo
+  {
+    font-size: 1.5em;
+  }
+
+  p.descricao
+  {
+    font-size: 1rem;
+  }
+}

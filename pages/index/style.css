@@ -1,0 +1,499 @@
+/* Estilizado  conteudo da main */
+main.corpo
+{
+  /* width: 85%; */
+  padding-top: 3rem;
+}
+
+/* Seção principal das imagens */
+.painel-principal
+{
+  margin-bottom: 8rem !important;
+  align-items: center;
+}
+
+.painel-principal div.anuncio-petz
+{
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.painel-principal div.anuncio-petz p.descricao
+{
+  width: 92%;
+}
+
+.painel-principal div.anuncio-petz button.botao_principal
+{
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  padding: 1.2rem 2.5rem;
+  color: var(--color-terciary-text);
+  background-color: var(--primary-color-variant-two);
+}
+
+.painel-principal div.anuncio-petz button.botao_principal:hover
+{
+  background-color: var(--primary-color-variant-one);
+  transition: 1s;
+}
+
+.painel-principal div.parte-fotos-01,
+.painel-principal div.parte-fotos-02
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.painel-principal div.parte-fotos-01 div,
+.painel-principal div.parte-fotos-02 div
+{
+  position: relative;
+}
+
+.painel-principal div.parte-fotos-01 div img
+{
+  width: 11vw;
+}
+
+.painel-principal div.parte-fotos-02 div img
+{
+  width: 25vw;
+}
+
+.painel-principal div.parte-fotos-01 div img,
+.painel-principal div.parte-fotos-02 div img
+{
+  border-radius: 10px;
+}
+
+.painel-principal div.parte-fotos-01 div.fundo,
+.painel-principal div.parte-fotos-02 div.fundo
+{
+  z-index: -1;
+  padding: 1rem;
+  opacity: 0.8;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.painel-principal div.parte-fotos-01 div.fundo-roxo
+{
+  width: 95%;
+  height: 75%;
+  right: -10px;
+  bottom: -10px;
+  background-color: var(--additional-color-purple);
+}
+
+.painel-principal div.parte-fotos-01 div.fundo-azul
+{
+  width: 65%;
+  height: 80%;
+  left: -15px;
+  bottom: -15px;
+  background-color: var(--secondary-color);
+}
+
+.painel-principal div.parte-fotos-02 div.fundo-laranja
+{
+  top: -20px;
+  width: 70%;
+  height: 70%;
+  right: -20px;
+  background-color: var(--primary-color);
+}
+
+/* Estilizado a seção do tipos de perfil */
+section.tipos-perfil
+{
+  padding: 3rem 0;
+  justify-content: center;
+  background-color: rgba(255, 136, 0, 0.15);
+}
+
+section.tipos-perfil h2
+{
+  width: 52%;
+  text-align: center;
+}
+
+section.tipos-perfil .cards-container
+{
+  padding-top: 3rem;
+  justify-content: space-around;
+}
+
+section.tipos-perfil .cards-container div.card-perfil
+{
+  gap: 15px;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: var(--background-color);
+  box-shadow: 2px 2px 15px rgba(78, 75, 89, 0.15);
+  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.tipos-perfil .cards-container div.card-perfil img
+{
+  width: 16vw;
+}
+
+section.tipos-perfil .cards-container div.card-perfil p
+{
+  text-align: center;
+}
+
+section.tipos-perfil .cards-container div.card-perfil:nth-child(1) a
+{
+  color: var(--additional-color-purple);
+}
+
+section.tipos-perfil .cards-container div.card-perfil:nth-child(2) a
+{
+  color: var(--secondary-color);
+}
+
+section.tipos-perfil .cards-container div.card-perfil a.link
+{
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+
+/* Estlizando a seção dos pilares */
+section.valores-plataforma
+{
+  padding: 4rem 0;
+  align-items: stretch;
+}
+
+section.valores-plataforma div.sobre-valores
+{
+  gap: 30px;
+  padding-right: 2rem;
+}
+
+section.valores-plataforma div.valores-topicos
+{
+  justify-content: space-evenly;
+}
+
+section.valores-plataforma div.valores-topicos .linha-valores
+{
+  padding: 1.5rem 0;
+  justify-content: space-around;
+}
+
+section.valores-plataforma div.valores-topicos .linha-valores .pilar
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+section.valores-plataforma div.valores-topicos .linha-valores .pilar span
+{
+  font-size: 2rem;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  color: var(--background-color);
+  box-shadow : 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+section.valores-plataforma div.valores-topicos .linha-valores .pilar p
+{
+  margin-top: 1rem;
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+div.acao-social span.box-pilar:nth-child(1)
+{
+  background-color: var(--secondary-color);
+}
+
+div.consciencia-ambiental span.box-pilar,
+div.adocao-responsavel span.box-pilar
+{
+  background-color: var(--primary-color);
+}
+
+div.conscientizacao span.box-pilar
+{
+  background-color: var(--additional-color-purple);
+}
+
+/* Aplicando as medidas de responsividade */
+
+@media only screen and (max-width: 1200px)
+{
+  .painel-principal div.anuncio-petz button.botao_principal
+  {
+    font-size: 1.15rem;
+    padding: 1.1rem 2rem;
+  }
+
+  section.tipos-perfil .cards-container div.card-perfil a.link
+  {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 1024px)
+{
+  .painel-principal div.anuncio-petz
+  {
+    gap: 15px;
+  }
+  
+  .painel-principal div.anuncio-petz button.botao_principal
+  {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+
+  section.tipos-perfil h2
+  {
+    width: 70%;
+  }
+
+  section.tipos-perfil .cards-container div.card-perfil
+  {
+    padding: 2rem 1rem;
+  }
+
+  section.tipos-perfil .cards-container div.card-perfil a.link
+  {
+    font-size: 1.2rem;
+  }
+
+  section.valores-plataforma div.valores-topicos .linha-valores .pilar
+  {
+    text-align: center;
+  }
+
+  section.valores-plataforma div.sobre-valores
+  {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px)
+{
+  .painel-principal
+  {
+    gap: 40px;
+    margin-bottom: 5rem !important;
+    flex-direction: column-reverse;
+  }
+
+  .painel-principal div.imagens
+  {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .painel-principal div.anuncio-petz
+  {
+    text-align: center;
+    align-items: center;
+  }
+
+  .painel-principal div.anuncio-petz p.descricao
+  {
+    width: 88%;
+  }
+
+  .painel-principal div.anuncio-petz button.botao_principal
+  {
+    font-size: 1rem;
+    padding: 0.8rem 1.8rem;
+  }
+
+  .painel-principal div.parte-fotos-01 div img
+  {
+    width: 17vw;
+  }
+
+  .painel-principal div.parte-fotos-02 div img
+  {
+    width: 40vw;
+  }
+
+  section.tipos-perfil h2
+  {
+    width: 85%;
+  }
+
+  .painel-principal div.parte-fotos-01 div.fundo-azul
+  {
+    left: -10px;
+    bottom: -10px;
+  }
+
+  .painel-principal div.parte-fotos-01 div.fundo-roxo 
+  {
+    right: -7px;
+    bottom: -7px;
+  }
+
+  .painel-principal div.parte-fotos-02 div.fundo-laranja
+  {
+    top: -15px;
+    right: -15px;
+  }
+
+  section.tipos-perfil .cards-container
+  {
+    padding-top: 2rem;
+  }
+
+  section.tipos-perfil .cards-container div.card-perfil
+  {
+    gap: 12px;
+  }
+
+  section.tipos-perfil .cards-container div.card-perfil a.link
+  {
+    font-size: 1rem;
+  }
+
+  section.tipos-perfil .cards-container div.card-perfil a.link
+  {
+    margin-top: 0.5rem;
+  }
+
+  section.valores-plataforma div.sobre-valores
+  {
+    padding-right: 0;
+  }
+
+  section.valores-plataforma div.valores-topicos
+  {
+    justify-content: flex-start;
+}
+
+  section.valores-plataforma div.valores-topicos .linha-valores
+  {
+    padding: 0;
+  }
+
+  section.valores-plataforma div.valores-topicos .linha-valores .pilar
+  {
+    margin: 1rem 0;
+    flex-direction: row;
+  }
+
+  section.valores-plataforma div.valores-topicos .linha-valores .pilar p
+  {
+    margin-left: 1rem;
+  }
+
+  section.valores-plataforma div.valores-topicos .linha-valores .pilar span
+  {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 700px)
+{
+  .painel-principal
+  {
+    gap: 40px;
+    margin-bottom: 5rem !important;
+    flex-direction: column-reverse;
+  }
+
+  .painel-principal div.imagens
+  {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .painel-principal div.anuncio-petz
+  {
+    text-align: center;
+    align-items: center;
+  }
+
+  .painel-principal div.parte-fotos-01 div img
+  {
+    width: 17vw;
+  }
+
+  .painel-principal div.parte-fotos-02 div img
+  {
+    width: 40vw;
+  }
+
+  section.valores-plataforma
+  {
+    flex-direction: column;
+  }
+
+  section.valores-plataforma div.valores-topicos
+  {
+    margin-top: 2rem;
+    justify-content: center;
+  }
+
+  section.valores-plataforma div.sobre-valores
+  {
+    padding-right: 0;
+  }
+
+  section.valores-plataforma div.valores-topicos .linha-valores .pilar
+  {
+    margin: 0.5rem 0;
+    flex-direction: column;
+  }
+
+  section.valores-plataforma div.valores-topicos .linha-valores .pilar p
+  {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 600px)
+{
+  section.tipos-perfil h2
+  {
+    width: 85%;
+  }
+
+  section.tipos-perfil .cards-container div.card-perfil
+  {
+    margin: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px)
+{
+  .painel-principal
+  {
+    flex-direction: column-reverse !important;
+  }
+
+  section.tipos-perfil .cards-container div.card-perfil
+  {
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+  
+  section.valores-plataforma div.valores-topicos .linha-valores .pilar
+  {
+    text-align: center;
+  }
+}
